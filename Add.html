@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous">
+    <link rel="icon" href="icon.jpg" type="icon">
+    <title>Dti automation</title>
+
+    <link href="fonts/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+    </style>
+    <style>
+        .navlink {
+            color: rgb(139, 139, 139);
+            text-decoration: none;
+            margin-right: 65px;
+            font-size: 20px;
+        }
+
+        .navlinkactive {
+            color: black;
+            text-decoration: none;
+            margin-right: 65px;
+            font-size: 20px;
+        }
+
+        .navigation:hover {
+            color: rgb(159, 155, 155);
+        }
+
+        .row1 {
+
+            /* background-color: black; */
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .navigation {
+            color: silver;
+
+        }
+
+        .details {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        a p {
+            font-size: 17px;
+        }
+
+        .details {
+            color: silver;
+        }
+
+        .sub:hover {
+            color: gray;
+        }
+
+        input[type=text],
+        input[type=number],
+        select,
+        input[type=date],
+        input[type=time] {
+            width: 95%;
+            padding: 2px 4px;
+            margin-left: 9px;
+            display: inline-block;
+            margin-top: 3px;
+            box-sizing: border-box;
+            background-color: transparent;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+            color: #ccc;
+        }
+
+        input[type=file] {
+            width: 95%;
+            margin-top:3px;
+            display: inline-block;
+            margin-left: 9px;
+            box-sizing: border-box;
+            background-color: transparent;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+            color: #ccc;
+        }
+
+        .sub {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+            background-color: transparent;
+            color: silver;
+            border: none;
+        }
+        option{
+            background-color: black; 
+            color: white;
+        }
+        
+    </style>
+    <style>
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 35px;
+          height: 20px;
+          margin-left: 8px;
+          margin-top: 3px;
+        }
+        
+        .switch input { 
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+        
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: gray;
+          -webkit-transition: .4s;
+          transition: .4s;
+        }
+        
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 13px;
+          width: 13px;
+          left: 4px;
+          bottom: 4px;
+          background-color: white;
+          -webkit-transition: .4s;
+          transition: .4s;
+        }
+        
+        input:checked + .slider {
+          background-color: white;
+        }
+        
+        input:focus + .slider {
+          box-shadow: 0 0 1px white;
+        }
+        
+        input:checked + .slider:before {
+          -webkit-transform: translateX(13px);
+          -ms-transform: translateX(13px);
+          transform: translateX(13px);
+        }
+        
+        /* Rounded sliders */
+        .slider.round {
+          border-radius: 34px;
+        }
+        
+        .slider.round:before {
+          border-radius: 50%;
+        }
+        </style>
+    <style>
+            ouput{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          padding: 10px 0;
+        }
+        
+        .thumbnail {
+          height: 50px;
+        }
+          </style>
+  </head>
+
+  <body style=" background-color: rgba(0, 0, 0, 90);">
+    <div style="display: flex; flex-direction: row; height: 45px;
+      justify-content: center; background-color: rgba(45, 45, 45, 100);">
+
+      <div class="row1 " style="width: 100%; ">
+        <div class="" style=" width:28%; background-color: rgba(0, 0, 0, 90); ">
+          <center><a class="navigation" style=" text-decoration: none;
+              background-color: rgba(0, 0, 0, 70); " href="index.html"><p
+                style="color: white; padding-top: 10px; "> <img src="user.png"
+                  style="width: 23px;" alt="icone loading"><b>Users</b></p></a></center>
+        </div>
+        <div class="" style=" width:29%; ">
+
+          <center><a class="navigation" style=" text-decoration: none; "
+              href="history.html"><p style="padding-top: 10px;"><img
+                  src="history.png" style="width: 23px; padding-bottom: 2px;"
+                  alt="icone loading">History</p></a></center>
+        </div>
+        <div class="" style=" width:30%; ">
+
+          <center><a class="navigation" style=" text-decoration: none;"
+              href="unkown.html"><p style="padding-top: 10px;"><img
+                  src="unknown.png" style="width: 23px;" alt="icone loading">Unknown</p></a></center>
+        </div>
+        <div class="" style=" width:13%; ">
+
+          <center><a class="navigation" style=" text-decoration: none;"
+              href="setting.html"><p style="padding-top: 10px;"><img
+                  src="setting.png" style="width: 23px;" alt="icone loading"></p></a></center>
+        </div>
+      </div>
+    </div>
+    <center>
+      <h3 style="color: silver; margin-top: 10px;"> Register to Users</h3>
+      <div>
+        <table style="margin-top: 10px;">
+          <form autocomplete="off">
+            <table style="width: 90%;">
+
+              <tr>
+                <td style="color: silver; padding-left: 7px;">
+                  Name
+                </td>
+                <td>
+                  <input type="text" name="contact" id="contact">
+
+                </table>
+                <tr>
+                 
+                </tr>
+              </form>
+              <div class="">
+                <a style="text-decoration: none; color: silver;"
+                  href="information.html"> <button style="width:170px; margin-top: 20px; background-color: rgba(15,15,15,100); color:
+                  silver; border-radius: 50px;" >
+                  Submit
+                </button></a>
+              </div>
+            </table>
+          </center>
+
+        </body>
+        <footer>
+
+
+        </footer>
+
+
+
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"></script>
+        <!-- <script>
+    function myFunction() {
+  alert("Successfully user added !");
+} 
+       
+      
+</script> -->
+      </html>
